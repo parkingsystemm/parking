@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+  <body>
+    <h3>A Parking System</h3>
+
+<div>
+    <form action="charges.php" method="post">
+	<input type="radio" id="car" name="vehicle" value="car">
+  	<label for="car">CAR</label><br>
+  	<input type="radio" id="motor" name="vehicle" value="motor">
+  	<label for="motor">MOTOR</label><br>
+	
+
+      <label for="hour">Enter total hours: </label>
+      <input type="text" name="hour" placeholder="Enter total hours">
+      
+      <input type="submit" value="Submit">
+
+    </form>
+    </div>
+  </body>
+</html>
