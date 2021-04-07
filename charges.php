@@ -3,16 +3,15 @@
 $hour = $_POST['hour'];
 $vehicle = $_POST['vehicle'];
 
+if ($vehicle = 'car' && $hour <= 4){
 $totalcar = $hour*3;
-$totalmotor = $hour*2;
-
-if ($vehicle = "car" && $totalcar <= 12){
-echo "Please Pay Total Amount of Parking Fee: RM " . $totalcar;
+echo "Total Amount : " . $totalcar;
 } 
-elseif ($vehicle = "motor" && $totalmotor <= 6){
-echo "Please Pay Total Amount of Parking Fee: RM " . $totalmotor;}
+else if ($vehicle = 'motor' && $hour <= 4){
+$totalmotor = $hour*1.5;
+echo "Total Amount : " . $totalmotor;}
 else{
-echo "Exceed maximum fee. Please pay RM 50";
+echo "Exceed maximum fee. Please pay RM50";
 }
 
 $level1car = [
